@@ -1,14 +1,19 @@
+import FarmaLogo from "../../assets/logofarma.svg"
+import { Link } from "react-router-dom"
+
 function Navbar() {
     return (
         <>
-            <div className='w-full flex justify-center py-4 bg-amber-400 text-amber-950'>
+            <div className='h-20 flex justify-center py-4 bg-amber-400 text-amber-950'>
             
                 <div className="container flex justify-between text-lg">
-                    <Link to='/home' className="text-2xl font-bold">Farmamel</Link>
+                    <Link to='/home' className="w-40">
+                    <img src={FarmaLogo}/>
+                    </Link>
 
                     <div className='flex gap-4'>
-                    Lista categorias
-                    Cadastrar Categoria
+                    <Link to='/categorias' className='hover:underline'>Categorias</Link>
+                    <Link to='/cadastrarcategoria' className='hover:underline'>Cadastrar Categorias</Link>
                     </div>
                 </div>
             </div>

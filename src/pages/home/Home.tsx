@@ -1,12 +1,12 @@
-import FarmaImg from '../../assets/Farma.png';
+import FarmaImg from '../../assets/Farmacy.svg';
 
 function Home() {
     return (
         <>
-            <div className=" bg-amber-300 flex justify-center">
+            <div className=" bg-amber-300 flex justify-center font-thin text-shadow-lg">
                 <div className='container grid grid-cols-2  text-amber-950'>
                     <div className="flex flex-col gap-4 items-center justify-center py-4">
-                        <h2 className='text-5xl font-bold'>
+                        <h2 className='text-5xl font-semibold'>
                             Farmamel
                         </h2>
                         <p className='text-xl'>
