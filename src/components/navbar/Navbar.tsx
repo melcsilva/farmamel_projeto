@@ -1,4 +1,4 @@
-import FarmaLogo from "../../assets/logofarma.svg"
+import FarmaLogo from "../../assets/FarmaLOGO.png"
 import { Link } from "react-router-dom"
 
 function Navbar() {

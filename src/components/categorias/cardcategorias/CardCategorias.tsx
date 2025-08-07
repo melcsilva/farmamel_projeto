@@ -14,13 +14,13 @@ function CardCategorias({ categoria }: CardCategoriasProps) {
             <p className='p-8 text-3xl text-amber-950 bg-amber-50 h-full'>{categoria.descricao}</p>
             
             <div className="flex">
-                <Link to='' 
+                <Link to={`/editarcategoria/${categoria.id}`}
                     className='w-full bg-amber-400 text-amber-950 hover:bg-amber-600 
                         flex items-center justify-center py-2'>
                     <button>Editar</button>
                 </Link>
 
-                <Link to='' className='text-amber-400 bg-amber-800 hover:bg-amber-950 w-full 
+                <Link to={`/deletarcategoria/${categoria.id}`} className='text-amber-400 bg-amber-800 hover:bg-amber-950 w-full 
                     flex items-center justify-center'>
                     <button>Deletar</button>
                 </Link>
